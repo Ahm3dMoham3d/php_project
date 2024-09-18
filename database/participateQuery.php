@@ -1,7 +1,6 @@
 <?php
-// Tournament.php
 
-require_once 'connection.php'; // Include the database connection
+require_once 'connection.php';
 
 class Participate
 {

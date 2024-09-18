@@ -1,8 +1,6 @@
 <?php
-// Tournament.php
 
-require_once 'connection.php'; // Include the database connection
-
+require_once 'connection.php';
 class Tournament
 {
     private $mysqli;
@@ -12,7 +10,6 @@ class Tournament
         $this->mysqli = $mysqli;
     }
 
-    // Fetch tournament by ID
     public function getTournamentById($id)
     {
         $sql = "SELECT * FROM tournaments WHERE id = ?";
@@ -37,7 +34,6 @@ class Tournament
 
 
 
-    // Get all tournaments
     public function getAllTournaments()
     {
         $sql = "SELECT * FROM tournaments";
